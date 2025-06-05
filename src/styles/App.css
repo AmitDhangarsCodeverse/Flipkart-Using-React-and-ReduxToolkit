@@ -1,0 +1,33 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+ color:black;
+}
+body{
+  background-color: #F1F2F4;
+}
+.search-bar input::placeholder{
+ font-size:clamp(.4rem,2vw,.81rem);
+}
+.input-section input{
+  font-size:clamp(.45rem,2vw,.81rem);
+}
+.signup-section p{
+ font-size:clamp(.2rem,2vw,.8rem);
+}
+.cart p{
+ font-size:clamp(.2rem,2vw,.8rem); 
+}
+.become-seller p{
+ font-size:clamp(.2rem,2vw,.8rem); 
+}
+.categories p{
+  font-size:clamp(.2rem,2vw,.8rem)
+}
+.error{
+ font-size:clamp(.2rem,2vw,.8rem);
+ color:red  ;
+}
