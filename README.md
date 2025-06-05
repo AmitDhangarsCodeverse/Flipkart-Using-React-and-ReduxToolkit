@@ -57,8 +57,10 @@ npm install
 
 # Start the development server
 npm start
+```
 
 ## 🚀 Folder Structure
+```bash
 src/
 │
 ├── assets/           → Static assets such as images and icons
@@ -73,7 +75,7 @@ src/
 │
 ├── App.jsx           → Main application layout and route definitions
 └── main.jsx          → Application entry point (React DOM rendering)
-
+````
 Planned Improvements
 --------------------
 
@@ -96,10 +98,3 @@ This project is developed and maintained by:
 
 **Amit Dhangar**\
 Frontend Developer | React & JavaScript Enthusiast
-
--   💼 LinkedIn: [linkedin.com/in/your-profile](#)
-
--   🌐 Portfolio: [your-portfolio.com](#)
-
--   📧 Email: your-email@example.com
-
