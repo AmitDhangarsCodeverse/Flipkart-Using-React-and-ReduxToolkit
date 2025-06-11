@@ -13,7 +13,10 @@ export const getProduct=()=>{
 export const getCategories=()=>{
  return storeAPI.get("/categories");
 };
-
+// to get product by Category
+export const getProductbyCategories=(id)=>{
+   return storeAPI.get(`/?categoryId=${id}`);
+}
 // to get Product Detail
 export const getProductDetail=()=>{
  return storeAPI.get("/products/category/jewelery");

@@ -1,17 +1,18 @@
-import Categories from '../components/categories';
-import Carousel from '../components/carosel';
-import NavBar from '../components/navbar';
-import '../styles/App.css';
-import PopularDeals from '../components/populardeals';
+import { Outlet } from "react-router-dom";
+import NavBar from "../components/navbar";
+import Footer from "../components/footer";
+import { LoginContextProvider } from "../contexts/username";
 function App() {
   return (
+    <LoginContextProvider>
     <>
-      <NavBar/>
-      <Categories/>
-      <Carousel/>
-      <PopularDeals/>
+      <NavBar />
+      <Outlet />
+      <Footer/>
     </>
-  )
+
+    </LoginContextProvider>
+  );
 }
 
-export default App
+export default App;

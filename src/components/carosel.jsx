@@ -41,14 +41,14 @@ const Carousel = () => {
             <img
               src={slide}
               alt=""
-              className="xs:rounded-md"
+              className="cursor-pointer xs:rounded-sm"
             />
           </picture>
         </div>
         <div className="current-dot-wrapper flex justify-center items-center xs:py-1 my-1">
           {slides.map((cur, index) => (
             <div
-              className={`dot border-gray-400 ${
+              className={`dot cursor-pointer border-gray-400 ${
                 crndot == index ? " bg-black" : "bg-white"
               } xs:h-1 w-1 m-1 border-2 rounded lg:h-2 lg:w-2 lg:rounded xl:`}
             ></div>

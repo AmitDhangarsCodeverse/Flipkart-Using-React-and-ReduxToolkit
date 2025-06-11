@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flipkart-style Dropdown Menu</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2874f0;
+      padding: 15px 30px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .menu-item {
+      position: relative;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      transition: background 0.3s;
+    }
+
+    .menu-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      color: black;
+      min-width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+    }
+
+    .dropdown li {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+      transition: background 0.2s;
+    }
+
+    .dropdown li:hover {
+      background-color: #f5f5f5;
+    }
+
+    /* Show dropdown on hover */
+    .menu-item:hover .dropdown {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="menu">
+      <li class="menu-item">
+        Electronics
+        <ul class="dropdown">
+          <li>Mobiles</li>
+          <li>Laptops</li>
+          <li>TVs</li>
+          <li>Cameras</li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        Fashion
+        <ul class="dropdown">
+          <li>Men</li>
+          <li>Women</li>
+          <li>Kids</li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        Home & Furniture
+        <ul class="dropdown">
+          <li>Furniture</li>
+          <li>Kitchen</li>
+          <li>Home Decor</li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        Grocery
+        <ul class="dropdown">
+          <li>Fruits</li>
+          <li>Vegetables</li>
+          <li>Beverages</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>
