@@ -1,11 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from '../utilities/App.jsx'
-import Signup from '../pages/signup.jsx'
 import Layout from '../components/layout.jsx'
 import Authentication from '../pages/Authentication.jsx'
 import Cart from "../pages/cart.jsx";
 import BecomeSeller from "../pages/becomeseller.jsx";
-import Login from "../pages/Login.jsx";
+import ProductDetails from "../components/productdetail.jsx";
+import Error from "../pages/ErrorPage.jsx";
+import CategoriesProduct from "../components/categoriesproduct.jsx";
+import BuyNow from "../pages/Buynow.jsx";
 export const router=createBrowserRouter([
  {
   path:"/",
@@ -14,10 +16,6 @@ export const router=createBrowserRouter([
    {
    path:"/",
    Component:Layout,
-   },
-   {
-    path:"signup",
-    Component:Signup,
    },
    {
    path:"login",
@@ -31,6 +29,22 @@ export const router=createBrowserRouter([
     path:'becomeaseller',
     Component:BecomeSeller,
     
+   },
+   {
+    path:'productdetail/:id?',
+    Component:ProductDetails,
+   },
+   {
+   path:'categories/products/:id?',
+   Component:CategoriesProduct,
+   },
+   {
+    path:'buynow',
+    Component:BuyNow,
+   },
+   {
+    path:"*",
+    Component:Error,
    }
   ]
  }

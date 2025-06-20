@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
 import Account from '../pages/Account'
 import Login from "./Login";
+import { useLocalStorage } from "../hooks/useLocalstorage";
 const Authenication = () => {
+ const [storedValue,setValue]=useLocalStorage(localStorage.key(0)); 
  return (<>
   <div className="Authentication-wrapper">
-  {/* {userdata ? <Account userdata={userdata}/> : <Login/>} */}
-  <Login/>
+  {storedValue? <Account storedValue={storedValue} setValue={setValue}/> : <Login/>}
   </div>
  </>);
 }

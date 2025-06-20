@@ -1,8 +1,10 @@
 const BecomeSeller = () => {
  return (<>
- <div className="becameaseller-wrapper bg-white xs:m-1 xs:p-2 md:m-2 lg:m-4">
+ <div className="becameaseller-wrapper bg-white shadow-md rounded-md shadow-gray-500 xs:m-1 xs:p-2 md:m-2 lg:m-4">
   <p className="text-center">Sell Online on Flipkart</p>
-  <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/prelogin/banner/Desktop_sell.webp" alt="" className="rounded-md border-red-50 border-4 w-full" />
+  <div className="flex justify-center items-center">
+   <img src="https://miro.medium.com/v2/resize:fit:1400/1*WGLqWjL48iQWHQjgok1FSQ.gif" alt="" className="xs:h-28 md:h-52 lg:h-72" />
+  </div>
  </div>
  </>);
 }

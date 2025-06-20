@@ -35,13 +35,13 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="carosel-wrapper h-auto bg-white relative xs:m-1 flex justify-center items-center flex-col pt-1 sm:m-2 lg:m-1 xl:m-3">
-        <div className="carousel-imgage-container flex items-center p-2">
+      <div className="carosel-wrapper rounded-lg border-2 shadow-blue-300 border-blue-300 h-auto bg-white relative xs: shadow-md m-1 flex justify-center items-center flex-col pt-1 sm:m-2 lg:m-1 xl:m-3">
+        <div className="carousel-imgage-container flex justify-evenly xs:p-1 lg:p-2">
           <picture>
             <img
               src={slide}
               alt=""
-              className="cursor-pointer xs:rounded-sm"
+              className="cursor-pointer xs:rounded-md lg:rounded-xl"
             />
           </picture>
         </div>
@@ -51,6 +51,7 @@ const Carousel = () => {
               className={`dot cursor-pointer border-gray-400 ${
                 crndot == index ? " bg-black" : "bg-white"
               } xs:h-1 w-1 m-1 border-2 rounded lg:h-2 lg:w-2 lg:rounded xl:`}
+              key={slides.id}
             ></div>
           ))}
         </div>

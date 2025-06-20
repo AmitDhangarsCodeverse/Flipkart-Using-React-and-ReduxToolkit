@@ -8,14 +8,17 @@ const storeAPI=axios.create({
 export const getProduct=()=>{
    return storeAPI.get("/products");
 };
-
+//to get product by id
+export const getProductbyId=(id)=>{
+   return storeAPI.get(`products/${id}`);
+};
 // to get categories
 export const getCategories=()=>{
  return storeAPI.get("/categories");
 };
 // to get product by Category
 export const getProductbyCategories=(id)=>{
-   return storeAPI.get(`/?categoryId=${id}`);
+   return storeAPI.get(`/categories/${id}/products`);
 }
 // to get Product Detail
 export const getProductDetail=()=>{

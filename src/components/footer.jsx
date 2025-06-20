@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black grid p-1 xs:m-1 sm:m-2 lg:m-1 xl:m-3 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
+      <footer className="bg-black xs:rounded-md shadow-md shadow-black border-2 border-black grid p-1 xs:m-1 sm:m-2 lg:m-1 xl:m-3 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
         <div className="links border-r-blue-400 flex-wrap xs:border-r-0 lg:flex justify-evenly lg:border-r-2 p-2">
           <div className="about m-1">
             <p className="uppercase">About</p>
